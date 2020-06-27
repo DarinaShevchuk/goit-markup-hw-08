@@ -1,0 +1,102 @@
+.button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  border-width: 0;
+  padding: 10px 32px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $font-text-color;
+  background-color: $button-color;
+
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-secondary {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border-width: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: $title-text-color;
+    background-color: $secondary-bgr-color;
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  &-send {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+
+    min-width: 200px;
+    border-radius: 4px;
+    border-width: 0;
+
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: $font-text-color;
+    background-color: $button-color;
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-white-color;
+    color: $button-color;
+  }
+}
+
+.button-secondary {
+  &:hover,
+  &:focus {
+    background-color: $button-color;
+    color: $primary-white-color;
+  }
+}
+
+.button-flex {
+  .item + .item {
+    margin-left: 8px;
+  }
+}
+
+.button-send {
+  &:hover,
+  &:focus {
+    background-color: $primary-white-color;
+    color: $button-color;
+  }
+}
+.button-send:hover {
+  .send-icon {
+    fill: $button-color;
+  }
+}

@@ -1,0 +1,72 @@
+.footer {
+  &-page {
+    padding-top: 48px;
+    padding-bottom: 21px;
+    background-color: $footer-bgr-color;
+  }
+
+  &-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 28px;
+  }
+
+  &-social-networks {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $primary-white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-social-networks .footer-social-link + .footer-social-link {
+  margin-left: 10px;
+}
+
+.footer-icon {
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $button-color;
+  }
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+  color: $font-text-color;
+  text-decoration: none;
+
+  .link {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .element + .element {
+    margin-top: 9px;
+  }
+  &-map {
+    margin-bottom: 9px;
+  }
+}
+
+.send-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $primary-white-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

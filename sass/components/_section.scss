@@ -1,0 +1,24 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  &-team {
+    padding-top: 94;
+    padding-bottom: 94px;
+    background-color: $secondary-bgr-color;
+  }
+
+  &-examples {
+    padding-top: 94px;
+    padding-top: 94px;
+  }
+}
