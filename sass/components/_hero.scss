@@ -1,10 +1,12 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  // max-width: 1600px;
+  // height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  max-width: 480px;
+  height: 400px;
   text-align: center;
   background-image: linear-gradient(to right, $link-bgr-color, $link-bgr-color),
     url("../images/Header.jpg");

@@ -1,16 +1,19 @@
 .footer {
   &-page {
-    padding-top: 48px;
-    padding-bottom: 21px;
+    // padding-top: 48px;
+    // padding-bottom: 21px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
     background-color: $footer-bgr-color;
   }
 
-  &-content {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-bottom: 28px;
-  }
+  // &-content {
+  //   display: flex;
+  //   align-items: baseline;
+  //   justify-content: space-between;
+  //   padding-bottom: 28px;
+  // }
 
   &-social-networks {
     display: flex;

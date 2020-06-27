@@ -1,6 +1,8 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 
   &-title {
     margin-top: 0;
@@ -12,13 +14,21 @@
   }
 
   &-team {
-    padding-top: 94;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94;
+    // padding-bottom: 94px;
     background-color: $secondary-bgr-color;
   }
 
+  &-work {
+    display: none;
+    padding-top: 94;
+    padding-bottom: 94px;
+  }
+
   &-examples {
-    padding-top: 94px;
-    padding-top: 94px;
+    padding-top: 40px;
+    padding-top: 40px;
   }
 }

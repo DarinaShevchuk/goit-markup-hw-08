@@ -8,11 +8,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -32,14 +49,13 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -52,38 +68,24 @@ img {
 }
 
 .section-team {
-  padding-top: 94;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
-.section-examples {
-  padding-top: 94px;
-  padding-top: 94px;
+.section-work {
+  display: none;
+  padding-top: 94;
+  padding-bottom: 94px;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.section-examples {
+  padding-top: 40px;
+  padding-top: 40px;
 }
 
 .site-nav .current {
   color: #2196f3;
-}
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 86px;
-}
-
-.main-nav .item + .item {
-  margin-left: 50px;
 }
 
 .main-nav .link {
@@ -117,13 +119,6 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-
-.contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
 }
 
 .contact-nav .link {
@@ -490,22 +485,10 @@ img {
 }
 
 .footer-page {
-  padding-top: 48px;
-  padding-bottom: 21px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
   background-color: #2f303a;
-}
-
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 28px;
 }
 
 .footer-social-networks {

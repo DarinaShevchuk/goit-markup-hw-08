@@ -1,11 +1,14 @@
 .feature {
-  display: flex;
+  // display: flex;
 
-  .item {
-    max-width: 270px;
-  }
-  .item + .item {
-    margin-left: 30px;
+  // .item {
+  //   max-width: 270px;
+  // }
+  // .item + .item {
+  //   margin-left: 30px;
+  // }
+  .item:not(:last-child) {
+    margin-bottom: 30px;
   }
   .title {
     margin: 0;
@@ -14,6 +17,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: $title-text-color;
   }
 
@@ -25,23 +29,5 @@
 
     height: 120px;
     background-color: $secondary-bgr-color;
-  }
-}
-
-.border {
-  position: relative;
-
-  &::before {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    width: 1170px;
-    height: 1px;
-    background-color: $border-bgc;
   }
 }
