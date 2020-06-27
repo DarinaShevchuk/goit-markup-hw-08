@@ -217,11 +217,11 @@ img {
 
 .hero-title {
   margin: 0;
-  padding-top: 200;
-  padding-bottom: 46px;
+  padding-top: 118px;
+  padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -691,7 +691,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
 }
 
 .clients .item {
