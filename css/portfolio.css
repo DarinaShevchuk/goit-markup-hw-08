@@ -183,7 +183,7 @@ img {
 
 .logo-footer {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #ffffff;
   font-family: Raleway, sans-serif;
   font-size: 22px;
@@ -380,7 +380,7 @@ img {
 
 .footer-mail {
   padding: 18px 12px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -519,6 +519,18 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-social-networks .footer-social-link + .footer-social-link {
   margin-left: 10px;
 }
@@ -541,11 +553,11 @@ img {
 }
 
 .adress .element + .element {
-  margin-top: 9px;
+  margin-bottom: 8px;
 }
 
 .adress-map {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .send-icon {
