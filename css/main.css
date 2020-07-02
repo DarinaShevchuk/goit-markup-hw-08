@@ -80,8 +80,7 @@ img {
 }
 
 .section-examples {
-  padding-top: 40px;
-  padding-top: 40px;
+  padding: 60px 0;
 }
 
 .site-nav {
@@ -621,10 +620,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .button-flex .item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .button-send {

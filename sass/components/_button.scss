@@ -38,8 +38,17 @@
 
   &-flex {
     display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    // padding-bottom: 50px;
+    //  justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: start;
+      .item:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &-send {
