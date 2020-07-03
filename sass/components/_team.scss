@@ -21,6 +21,7 @@
   }
 
   @media screen and (max-width: 1200px) {
+    justify-content: center;
     .item:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -34,6 +35,9 @@
     }
     .item:nth-child(2n) {
       margin-left: 30px;
+    }
+    .item:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
 
