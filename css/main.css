@@ -89,9 +89,14 @@ img {
 }
 
 .section-work {
-  display: none;
   padding-top: 94;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .section-examples {
@@ -909,6 +914,38 @@ img {
   margin-bottom: 29.88px;
 }
 
+@media screen and (max-width: 1200px) {
+  .team .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team .item {
+    max-width: 354px;
+  }
+  .team .item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .item {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
+  .team .item + .item {
+    margin-left: 30px;
+  }
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,48 +979,24 @@ img {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 1200px) {
-  .icon-social .item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .icon-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .icon-social .item {
-    max-width: 354px;
-  }
-  .icon-social .item:nth-child(2n) {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .icon-social .item {
-    max-width: 270px;
-    margin-bottom: 0;
-  }
-  .icon-social .item + .item {
-    margin-left: 30px;
-  }
-}
-
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients .item {
-  margin: 15px;
-  width: calc((100% - 4 * 15px) / 2);
   cursor: pointer;
+}
+
+.clients .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.clients .item:nth-child(2n) {
+  margin-left: 30px;
 }
 
 .clients-icon {
@@ -997,7 +1010,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 90px;
-  min-width: 170px;
+  width: 210px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1008,13 +1021,6 @@ img {
 .clients-icon:hover, .clients-icon:focus {
   fill: #2196f3;
   border-color: #2196f3;
-}
-
-@media screen and (max-width: 1200px) {
-  .clients-icon {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 @media screen and (min-width: 1200px) {

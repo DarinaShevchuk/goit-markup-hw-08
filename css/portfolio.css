@@ -89,9 +89,14 @@ img {
 }
 
 .section-work {
-  display: none;
   padding-top: 94;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .section-examples {
