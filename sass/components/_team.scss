@@ -1,8 +1,5 @@
 .team {
-  // display: flex;
-
   .item {
-    // max-width: 270px;
     text-align: center;
     box-shadow: 0px 2px 1px $backdrop-bgc, 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -10,13 +7,6 @@
     background-color: $primary-white-color;
   }
 
-  // .item + .item {
-  //   margin-left: 30px;
-  // }
-
-  .item:not(:last-child) {
-    margin-bottom: 30px;
-  }
   .title {
     margin: 0;
     padding-top: 30px;
@@ -52,5 +42,32 @@
   &:focus {
     fill: $primary-white-color;
     background-color: $button-color;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      max-width: 354px;
+    }
+    .item:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .item {
+      max-width: 270px;
+      margin-bottom: 0;
+    }
+    .item + .item {
+      margin-left: 30px;
+    }
   }
 }

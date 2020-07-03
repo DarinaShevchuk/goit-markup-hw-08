@@ -1,20 +1,11 @@
 .clients {
   display: flex;
-  flex-wrap: wrap;
-
-  // justify-content: center;
-  // align-items: center;
-
   .item {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
-    // max-width: 170px;
     cursor: pointer;
   }
 
-  // .item + .item {
-  //   margin-left: 30px;
-  // }
   &-icon {
     display: flex;
     justify-content: center;
@@ -35,5 +26,18 @@
   &:focus {
     fill: $button-color;
     border-color: $button-color;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    max-width: 170px;
+    .item + .item {
+      margin-left: 30px;
+    }
   }
 }

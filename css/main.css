@@ -644,10 +644,6 @@ img {
   color: #ffffff;
 }
 
-.feature .item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .feature .title {
   margin: 0;
   padding-bottom: 10px;
@@ -657,6 +653,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .feature .title {
+    text-align: left;
+  }
 }
 
 .feature-item {
@@ -685,14 +687,24 @@ img {
   .feature .item {
     max-width: 354px;
   }
-  .feature .item:not(:last-child) {
-    margin-right: 30px;
+  .feature .item:nth-child(2n) {
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature .item {
     max-width: 270px;
+    margin-bottom: 0;
+  }
+  .feature .item + .item {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feature .item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -883,10 +895,6 @@ img {
   background-color: #ffffff;
 }
 
-.team .item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .team .title {
   margin: 0;
   padding-top: 30px;
@@ -934,12 +942,42 @@ img {
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 1200px) {
+  .icon-social .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .icon-social .item {
+    max-width: 354px;
+  }
+  .icon-social .item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-social .item {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
+  .icon-social .item + .item {
+    margin-left: 30px;
+  }
+}
+
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .clients .item {
@@ -970,6 +1008,28 @@ img {
 .clients-icon:hover, .clients-icon:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 1200px) {
+  .clients-icon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 170px;
+  }
+  .clients-icon .item + .item {
+    margin-left: 30px;
+  }
 }
 
 .footer-page {
