@@ -30,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     .item {
-      max-width: 354px;
+      width: calc((100% - 30px) / 2);
     }
     .item:nth-child(2n) {
       margin-left: 30px;

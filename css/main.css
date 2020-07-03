@@ -915,11 +915,6 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .team {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .team .item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -934,7 +929,7 @@ img {
         flex-wrap: wrap;
   }
   .team .item {
-    max-width: 354px;
+    width: calc((100% - 30px) / 2);
   }
   .team .item:nth-child(2n) {
     margin-left: 30px;
