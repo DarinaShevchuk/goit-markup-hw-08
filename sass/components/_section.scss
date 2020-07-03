@@ -1,8 +1,11 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-title {
     margin-top: 0;
@@ -16,9 +19,13 @@
   &-team {
     padding-top: 60px;
     padding-bottom: 60px;
-    // padding-top: 94;
-    // padding-bottom: 94px;
+
     background-color: $secondary-bgr-color;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   &-work {
@@ -29,7 +36,9 @@
 
   &-examples {
     padding: 60px 0;
-    // padding-top: 40px;
-    // padding-top: 40px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 }
