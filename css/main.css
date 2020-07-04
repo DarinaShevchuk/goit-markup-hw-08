@@ -990,18 +990,6 @@ img {
       flex-wrap: wrap;
 }
 
-.clients .item {
-  cursor: pointer;
-}
-
-.clients .item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.clients .item:nth-child(2n) {
-  margin-left: 30px;
-}
-
 .clients-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1013,7 +1001,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 90px;
-  width: 210px;
+  width: 100%;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1021,24 +1009,55 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icon:hover, .clients-icon:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
+.clients .item {
+  cursor: pointer;
+  width: 210px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients .item {
+    width: calc((100% - 30px) / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .clients .item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients .item + .item:not(:nth-child(4)) {
+    margin-left: 30px;
+  }
+  .clients .item:nth-last-child(n + 3) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients-icon {
+  .clients {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 170px;
+    width: 170px;
   }
-  .clients-icon .item + .item {
+  .clients .item + .item {
     margin-left: 30px;
   }
+}
+
+.clients-icon:hover, .clients-icon:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 .footer-page {
