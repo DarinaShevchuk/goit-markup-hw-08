@@ -1026,10 +1026,15 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .clients .item {
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .clients {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 170px;
   }
   .clients .item + .item {
     margin-left: 30px;
