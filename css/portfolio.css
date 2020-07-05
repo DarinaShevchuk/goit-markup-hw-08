@@ -1014,4 +1014,14 @@ img {
   letter-spacing: 0.06em;
   color: #212121;
 }
+
+.examples-thumb .photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  display: block;
+}
 /*# sourceMappingURL=portfolio.css.map */
