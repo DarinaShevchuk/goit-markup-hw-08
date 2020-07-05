@@ -4,22 +4,64 @@
   max-width: 480px;
   height: 400px;
   text-align: center;
-  background-image: linear-gradient(to right, $link-bgr-color, $link-bgr-color),
-    url("../images/Header.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $hero-bgc;
 
+  background-image: linear-gradient(to right, $link-bgr-color, $link-bgr-color),
+    url("../images/Header-mobile.jpg");
+
+  @media screen and (min-resolution: 2dppx) and (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to right,
+        $link-bgr-color,
+        $link-bgr-color
+      ),
+      url("../images/Header-mobile@2x.jpg");
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
+
+    background-image: linear-gradient(
+        to right,
+        $link-bgr-color,
+        $link-bgr-color
+      ),
+      url("../images/Header-tablet.jpg");
+
+    @media screen and (min-resolution: 2dppx) and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $link-bgr-color,
+          $link-bgr-color
+        ),
+        url("../images/Header-tablet@2x.jpg");
+    }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        $link-bgr-color,
+        $link-bgr-color
+      ),
+      url("../images/Header.jpg");
+
+    @media screen and (min-resolution: 2dppx) and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $link-bgr-color,
+          $link-bgr-color
+        ),
+        url("../images/Header@2x.jpg");
+    }
   }
 
   &-title {
