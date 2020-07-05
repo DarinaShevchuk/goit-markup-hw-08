@@ -161,6 +161,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $font-text-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-mail {
   padding: 18px 12px;
