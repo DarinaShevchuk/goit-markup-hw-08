@@ -779,6 +779,21 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .button-flex {
+    padding-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-flex {
+    padding-bottom: 50px;
+  }
+}
+
 .button-send {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1140,6 +1155,12 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-social {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-tablet {
+    margin-bottom: 60px;
   }
 }
 

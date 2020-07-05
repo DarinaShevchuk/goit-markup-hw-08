@@ -45,11 +45,12 @@
   }
 }
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 798px) and (max-width: 1199px) {
   .flex-element:nth-child(2n) {
     margin-right: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .flex-element:nth-child(3n) {
     margin-right: 0;
